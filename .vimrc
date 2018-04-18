@@ -1,3 +1,4 @@
+" https://github.com/junegunn/vim-plug
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
