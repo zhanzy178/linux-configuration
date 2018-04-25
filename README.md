@@ -6,8 +6,8 @@
 
 - The following command can auto config your linux server(Ubuntu/Debian).
 ```bash
-curl https://raw.githubusercontent.com/zhanzongyuan/linux-profile/master/auto_profile.sh > auto_profile.sh\
-    && sudo bash auto_profile.sh && rm -rf auto_profile.sh
+curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/auto_config.sh > auto_config.sh\
+    && sudo bash auto_config.sh && rm -rf auto_config.sh
 ```
 
 - [vim-plug](https://github.com/junegunn/vim-plug)
