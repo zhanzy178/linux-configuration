@@ -1,4 +1,5 @@
 # linux-profile
+> Ubuntu / Debian
 
 - [vim-plug](https://github.com/junegunn/vim-plug)
 ```bash
