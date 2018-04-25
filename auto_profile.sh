@@ -6,4 +6,4 @@ cat ./linux-profile/.bashrc>> ~/.bashrc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp ./linux-profile/.vimrc ~/.vimrc
-
+sudo apt-get install tmux -y
