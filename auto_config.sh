@@ -15,3 +15,6 @@ cp ./linux-configuration/.vimrc ~/.vimrc
 
 # tmux
 sudo apt-get install tmux -y
+
+# remove the configuration directory
+rm -rf ./linux-configuration
