@@ -2,17 +2,17 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
-" 设置粘贴功能
+" cut and copy to mac system clipboard.
 vmap <C-x> :!pbcopy<CR>   
 vmap <C-c> :w !pbcopy<CR><CR>
 
-"   (表示每一级缩进的长度)
+" tab width
 set shiftwidth=4
-" （表示在编辑模式的时候按退格键的时候退回缩进的长度）
+" auto indent width
 set softtabstop=4 
-" （显示行号）
+" show line number
 set nu
-" （自动缩进）
+" auto indent
 set autoindent
 
 " Declare the list of plugins.
