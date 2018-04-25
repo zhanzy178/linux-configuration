@@ -6,7 +6,10 @@ sudo apt-get update
 # git
 sudo apt-get install git -y
 git clone https://github.com/zhanzongyuan/linux-configuration.git
+
+# .bashrc configuration
 cat ./linux-configuration/.bashrc>> ~/.bashrc
+source ~/.bashrc
 
 # vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
