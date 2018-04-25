@@ -9,3 +9,5 @@ hg_ps1() {
 
 export PS1='\n${PINK}\u ${D}at ${ORANGE}\h ${D}in ${GREEN}\w$(hg_ps1)\
 ${D}\n$ '
+
+alias ls='ls -hF --color=tty'
