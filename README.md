@@ -1,4 +1,4 @@
-# linux-profile
+# My linux configuration
 
 > Ubuntu / Debian
 
