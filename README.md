@@ -4,7 +4,7 @@
 
 ## Usage
 
-- The following command can auto profile your linux server(Ubuntu/Debian).
+- The following command can auto config your linux server(Ubuntu/Debian).
 ```bash
 curl https://raw.githubusercontent.com/zhanzongyuan/linux-profile/master/auto_profile.sh > auto_profile.sh\
     && sudo bash auto_profile.sh && rm -rf auto_profile.sh
