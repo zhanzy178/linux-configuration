@@ -10,11 +10,14 @@ curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/a
     && sudo bash auto_config.sh && rm -rf auto_config.sh
 ```
 
-## Support softwares
+## Support
 
-- git
-- [vim-plug](https://github.com/junegunn/vim-plug)
-- [bash配色方案](https://www.zhihu.com/question/20110072/answer/14014646)
-- tmux
+- configurations & plugs
+    - [vim-plug](https://github.com/junegunn/vim-plug)
+    - .vimrc
+    - [.bashrc](https://www.zhihu.com/question/20110072/answer/14014646)
+- tools
+    - git
+    - tmux
 
 
