@@ -1,3 +1,6 @@
+" encoding support
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+
 " https://github.com/junegunn/vim-plug
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
