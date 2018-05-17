@@ -6,6 +6,7 @@ sudo apt-get update
 # git
 sudo apt-get install git -y
 git clone https://github.com/zhanzongyuan/linux-configuration.git
+git config --global core.editor "vim"
 
 # .bashrc configuration
 cat ./linux-configuration/.bashrc>> ~/.bashrc
