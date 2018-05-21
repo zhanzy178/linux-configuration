@@ -27,5 +27,14 @@ sudo apt-get install tmux -y
 rm -rf ./linux-configuration
 
 # nodejs npm
+# https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
+
+# redis-server
+sudo apt-get install -y redis-server
+
+# mysql
+# https://help.ubuntu.com/lts/serverguide/mysql.html
+sudo apt-get install -y mysql-server
+sudo apt-get install -y mysql-client
