@@ -3,6 +3,9 @@
 # update apt-get
 sudo apt-get update
 
+# base
+sudo apt-get install apt-transport-https build-essential -y
+
 # git
 sudo apt-get install git -y
 git clone https://github.com/zhanzongyuan/linux-configuration.git
@@ -22,3 +25,7 @@ sudo apt-get install tmux -y
 
 # remove the configuration directory
 rm -rf ./linux-configuration
+
+# nodejs npm
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
