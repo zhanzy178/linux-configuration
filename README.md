@@ -20,5 +20,6 @@ curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/a
     - git
     - tmux
     - node
-
+    - redis
+    - mysql
 
