@@ -19,5 +19,6 @@ curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/a
 - tools
     - git
     - tmux
+    - node
 
 
