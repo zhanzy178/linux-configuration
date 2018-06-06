@@ -22,7 +22,7 @@ cp ./linux-configuration/.vimrc ~/.vimrc
 
 # tmux
 sudo apt-get install tmux -y
-echo "set -g mouse on">~/.tmux.conf
+cp ./linux-configuration/.tmux.conf ~/.tmux.conf
 
 # remove the configuration directory
 rm -rf ./linux-configuration
