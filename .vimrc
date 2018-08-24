@@ -41,4 +41,5 @@ set smartindent
 "C language style indentation
 set cindent
 
-
+"Show cursorline
+set cursorline
