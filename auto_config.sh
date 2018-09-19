@@ -16,6 +16,8 @@ cat ./linux-configuration/.bashrc>> ~/.bashrc
 source ~/.bashrc
 
 # vim
+sudo apt-get remove vim-common -y
+sudo apt-get install vim -y
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp ./linux-configuration/.vimrc ~/.vimrc
