@@ -16,6 +16,7 @@ cat ./linux-configuration/.bashrc>> ~/.bashrc
 source ~/.bashrc
 
 # vim
+# vim-plug need `sudo chown -R username /home/username` to get authority of the home directory.
 sudo apt-get remove vim-common -y
 sudo apt-get install vim -y
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
