@@ -4,6 +4,8 @@
 
 ## Usage
 
+> Before install, for a better user experience, we can input `sudo chown -R username /home/username` to get authority of the home directory for current user.
+
 - The following command can auto config your linux server(Ubuntu/Debian).
 ```bash
 curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/auto_config.sh > auto_config.sh\
