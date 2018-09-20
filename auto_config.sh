@@ -4,7 +4,7 @@
 sudo apt-get update
 
 # base
-sudo apt-get install apt-transport-https build-essential -y
+sudo apt-get install apt-transport-https build-essential openssh-server -y
 
 # git
 sudo apt-get install git -y
