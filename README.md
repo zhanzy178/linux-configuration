@@ -25,5 +25,5 @@ curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/a
     - redis
     - mysql
     - proxychains-ng
-    - shadowsocks-libev
+    - shadowsocks client
 
