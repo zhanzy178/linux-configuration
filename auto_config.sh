@@ -27,9 +27,6 @@ cp ./linux-configuration/.vimrc ~/.vimrc
 sudo apt-get install tmux -y
 cp ./linux-configuration/.tmux.conf ~/.tmux.conf
 
-# remove the configuration directory
-rm -rf ./linux-configuration
-
 # nodejs npm
 # https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
@@ -59,3 +56,10 @@ rm -rf proxychains-ng
 sudo apt-get install python-pip
 sudo apt-get install python-setuptools m2crypto
 sudo pip install shadowsocks
+sudo mv ./linux-configuration/shadowsocks /etc/shadowsocks 
+
+
+# remove the configuration directory
+rm -rf ./linux-configuration
+
+
