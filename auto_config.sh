@@ -55,13 +55,7 @@ echo "sock5 127.0.0.1 9010" >> /etc/proxychains.conf
 cd ..
 rm -rf proxychains-ng
 
-# shadowsocks-libev
-mkdir shadowsocks-libev && cd shadowsocks-libev
-sudo apt-get install build-essential autoconf libtool libssl-dev \
-  gawk debhelper dh-systemd init-system-helpers pkg-config -y
-git clone https://github.com/shadowsocks/shadowsocks-libev.git
-cd shadowsocks-libev
-dpkg-buildpackage -us -uc
-cd ..
-dpkg -i shadowsocks-libev*.deb
-rm -rf shadowsocks-libev
+# shadowsocks client
+sudo apt-get install python-pip
+sudo apt-get install python-setuptools m2crypto
+sudo pip install shadowsocks
