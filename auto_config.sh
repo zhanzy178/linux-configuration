@@ -42,3 +42,26 @@ sudo apt-get install -y redis-server
 # https://help.ubuntu.com/lts/serverguide/mysql.html
 sudo apt-get install -y mysql-server
 sudo apt-get install -y mysql-client
+
+
+# proxychains-ng
+git clone https://github.com/rofl0r/proxychains-ng.git
+cd proxychains-ng
+./configure --prefix=/usr --sysconfdir=/etc
+make
+sudo make install
+sudo make install-config # installs /etc/proxychains.conf
+echo "sock5 127.0.0.1 9010" >> /etc/proxychains.conf
+cd ..
+rm -rf proxychains-ng
+
+# shadowsocks-libev
+mkdir shadowsocks-libev && cd shadowsocks-libev
+sudo apt-get install build-essential autoconf libtool libssl-dev \
+  gawk debhelper dh-systemd init-system-helpers pkg-config -y
+git clone https://github.com/shadowsocks/shadowsocks-libev.git
+cd shadowsocks-libev
+dpkg-buildpackage -us -uc
+cd ..
+dpkg -i shadowsocks-libev*.deb
+rm -rf shadowsocks-libev
