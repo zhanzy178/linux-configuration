@@ -24,7 +24,7 @@ curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/a
     - node
     - redis
     - mysql
-    - go
+    - go (go workspace is under `$HOME/go`)
     - proxychains-ng
     - shadowsocks client
 
