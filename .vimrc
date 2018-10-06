@@ -10,15 +10,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
 function! BuildYCM(info)
   if a:info.status == 'installed' || a:info.force
     !./install.sh
   endif
 endfunction
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM')
 
-" Initialize plugin system
 call plug#end()
 
 " Install for go
