@@ -36,6 +36,7 @@ sudo apt-get install -y mysql-client
 # wget https://dl.google.com/go/go1.11.1.linux-amd64.tar.gz
 wget https://mirrors.ustc.edu.cn/golang/go1.10.1.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.10.1.linux-amd64.tar.gz
+rm -rf go1.10.1.linux-amd64.tar.gz
 mkdir ~/go
 mkdir ~/go/bin
 mkdir ~/go/src
