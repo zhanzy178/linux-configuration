@@ -4,9 +4,7 @@
 
 ## Usage
 
-> Before install, for a better user experience, we can input `sudo chown -R username /home/username` to get authority of the home directory for current user.
-
-- The following command can auto config your linux server(Ubuntu/Debian).
+- The following command can auto config your linux server (Now work well in Ubuntu 16.04.4):
 ```bash
 curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/auto_config.sh > auto_config.sh\
     && sudo bash auto_config.sh && rm -rf auto_config.sh
@@ -16,6 +14,8 @@ curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/a
 
 - configurations & plugs
     - [vim-plug](https://github.com/junegunn/vim-plug)
+    - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe#linux-64-bit)
+    - [vim-go](https://github.com/fatih/vim-go)
     - .vimrc
     - [.bashrc](https://www.zhihu.com/question/20110072/answer/14014646)
 - tools
@@ -24,6 +24,7 @@ curl https://raw.githubusercontent.com/zhanzongyuan/linux-configuration/master/a
     - node
     - redis
     - mysql
+    - go
     - proxychains-ng
     - shadowsocks client
 
