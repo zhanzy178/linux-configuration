@@ -18,10 +18,13 @@ source ~/.bashrc
 # vim
 # vim-plug need `sudo chown -R username /home/username` to get authority of the home directory.
 sudo apt-get remove vim-common -y
-sudo apt-get install vim -y
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-cp ./linux-configuration/.vimrc ~/.vimrc
+sudo apt-get remove vim -y
+sudo apt install -y build-essential
+rm -fr /tmp/vim
+git clone https://github.com/vim/vim.git /tmp/vim
+make -C /tmp/vim
+sudo make install -C /tmp/vim
+rm -fr /tmp/vim
 
 # tmux
 sudo apt-get install tmux -y
