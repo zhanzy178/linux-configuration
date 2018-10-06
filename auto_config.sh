@@ -80,7 +80,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp ./linux-configuration/.vimrc ~/.vimrc
 vim +'PlugInstall --sync' +qa
 # Build YouCompleteMe
-python3 ~/.vim/plugged/YouCompleteMe/install.sh --clang-completer --go-completer
+cd ~/.vim/plugged/YouCompleteMe/
+git submodule update --init --recursive
+python3 install.py --clang-completer --go-completer
+cd $HOME
 
 # proxychains-ng
 git clone https://github.com/rofl0r/proxychains-ng.git
