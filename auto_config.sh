@@ -51,19 +51,11 @@ git clone https://github.com/golang/net.git
 git clone https://github.com/golang/sys.git
 git clone https://github.com/golang/tools.git
 git clone https://github.com/golang/crypto.git
-git clone https://github.com/golang/lint/golint
-# go install github.com/ramya-rao-a/go-outline
-# go install github.com/acroca/go-symbols
-# go install github.com/josharian/impl
-# go install github.com/rogpeppe/godef
-# go install github.com/sqs/goreturns
-# go install github.com/cweill/gotests/gotests
-# go install github.com/ramya-rao-a/go-outline
-# go install github.com/acroca/go-symbols
+git clone https://github.com/golang/lint.git
 go install golang.org/x/tools/cmd/guru
+go install golang.org/x/tools/cmd/goimports
 go install golang.org/x/tools/cmd/gorename
-go install github.com/golang/lint/golint
-go install github.com/cweill/gotests/gotests
+go install golang.org/x/lint/golint
 cd $HOME
 
 # vim
