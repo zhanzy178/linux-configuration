@@ -54,11 +54,14 @@ set tabstop=4
 "Then set the following line to automatically expand the tab into a space.
 set expandtab
 
-"Smart indentation
+" Smart indentation
 set smartindent 
 
-"C language style indentation
+" C language style indentation
 set cindent
 
-"Show cursorline
+" Show cursorline
 set cursorline
+
+" Activate mouse
+set mouse=a
