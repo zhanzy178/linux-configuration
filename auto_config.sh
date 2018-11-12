@@ -62,8 +62,21 @@ cd $HOME
 sudo apt-get remove vim-common -y
 sudo apt-get remove vim -y
 git clone https://github.com/vim/vim.git
-make -C vim
-sudo make install -C vim
+cd vim
+./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-pythoninterp=yes \
+            --with-python-config-dir=/usr/lib/python2.7/config \ # pay attention here check directory correct
+            --enable-python3interp=yes \
+            --with-python3-config-dir=/usr/lib/python3.5/config \
+            --enable-perlinterp=yes \
+            --enable-luainterp=yes \
+            --enable-gui=gtk2 \
+            --enable-cscope \
+            --prefix=/usr/local
+mak
+sudo make install
 rm -rf vim
 # Install plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
