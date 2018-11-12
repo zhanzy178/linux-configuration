@@ -40,7 +40,7 @@ mkdir ~/go
 mkdir ~/go/bin
 mkdir ~/go/src
 echo "export GOPATH=\$HOME/go" >> ~/.bashrc
-echo "export GOBIN=\$GOPATH/bin" >> ~/bashrc
+echo "export GOBIN=\$GOPATH/bin" >> ~/.bashrc
 echo "export PATH=\$PATH:/usr/local/go/bin:\$GOBIN" >> ~/.bashrc
 source ~/.bashrc
 # install some tools
