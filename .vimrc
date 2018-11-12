@@ -15,7 +15,7 @@ function! BuildYCM(info)
     !./install.sh
   endif
 endfunction
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM')
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 call plug#end()
 
