@@ -99,7 +99,7 @@ cd proxychains-ng
 make
 sudo make install
 sudo make install-config # installs /etc/proxychains.conf
-echo "socks5 127.0.0.1 9088" >> /etc/proxychains.conf
+sudo echo "socks5 127.0.0.1 9088" >> /etc/proxychains.conf
 cd ..
 rm -rf proxychains-ng
 
