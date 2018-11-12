@@ -7,8 +7,7 @@ sudo chown -R $USER $HOME
 sudo apt-get update
 
 # base
-sudo apt-get install apt-transport-https build-essential openssh-server \
-    cmake python-pip python-setuptools m2crypto python3-dev python-dev curl libncurses5-dev libncursesw5-dev -y
+sudo apt-get install apt-transport-https build-essential openssh-server cmake python-pip python-setuptools m2crypto python3-dev python-dev curl libncurses5-dev libncursesw5-dev -y
 
 # git
 sudo apt-get install git -y
