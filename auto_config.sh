@@ -39,9 +39,9 @@ rm -rf go1.10.1.linux-amd64.tar.gz
 mkdir ~/go
 mkdir ~/go/bin
 mkdir ~/go/src
-echo "export GOPATH=$HOME/go" >> ~/.bashrc
-echo "export GOBIN=$GOPATH/bin" >> ~/bashrc
-echo "export PATH=$PATH:/usr/local/go/bin:$GOBIN" >> ~/.bashrc
+echo "export GOPATH=\$HOME/go" >> ~/.bashrc
+echo "export GOBIN=\$GOPATH/bin" >> ~/bashrc
+echo "export PATH=\$PATH:/usr/local/go/bin:\$GOBIN" >> ~/.bashrc
 source ~/.bashrc
 # install some tools
 mkdir -p $GOPATH/src/golang.org/x/
