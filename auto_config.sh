@@ -8,7 +8,7 @@ sudo apt-get update
 
 # base
 sudo apt-get install apt-transport-https build-essential openssh-server \
-    cmake python-pip python-setuptools m2crypto python3-dev wget -y
+    cmake python-pip python-setuptools m2crypto python3-dev curl -y
 
 # git
 sudo apt-get install git -y
