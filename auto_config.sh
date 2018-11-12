@@ -75,7 +75,7 @@ cd vim
             --enable-gui=gtk2 \
             --enable-cscope \
             --prefix=/usr/local
-mak
+sudo make
 sudo make install
 rm -rf vim
 # Install plug
