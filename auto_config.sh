@@ -78,6 +78,7 @@ cd YouCompleteMe/
 git submodule update --init --recursive
 python3 install.py --clang-completer --go-completer
 cd $HOME
+sudo ln -s /usr/local/bin/vim /bin/vi
 
 # proxychains-ng
 git clone https://github.com/rofl0r/proxychains-ng.git
