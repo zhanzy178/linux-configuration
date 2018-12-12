@@ -65,3 +65,6 @@ set cursorline
 
 " Activate mouse
 set mouse=a
+
+" Backspace
+set backspace=2
