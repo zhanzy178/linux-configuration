@@ -11,7 +11,7 @@ sudo apt-get install apt-transport-https build-essential openssh-server cmake py
 
 # git
 sudo apt-get install git -y
-git clone https://github.com/zhanzongyuan/linux-configuration.git
+git clone https://github.com/zhanzy178/linux-configuration.git
 git config --global core.editor "vim"
 
 # .bashrc configuration
@@ -77,11 +77,11 @@ cd vim
             --prefix=/usr/local
 sudo make
 sudo make install
-rm -rf vim
+sudo rm -rf vim
 # Install plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-cp ./linux-configuration/.vimrc ~/.vimrc
+sudo cp ./linux-configuration/.vimrc ~/.vimrc
 vim +'PlugInstall --sync' +qa
 # Build YouCompleteMe
 cd ~/.vim/plugged/
@@ -101,7 +101,7 @@ sudo make install
 sudo make install-config # installs /etc/proxychains.conf
 sudo echo "socks5 127.0.0.1 9088" >> /etc/proxychains.conf
 cd ..
-rm -rf proxychains-ng
+sud rm -rf proxychains-ng
 
 # shadowsocks client
 sudo pip install shadowsocks
@@ -110,9 +110,9 @@ sudo mv ./linux-configuration/shadowsocks /etc/shadowsocks
 
 # tmux
 sudo apt-get install tmux -y
-cp ./linux-configuration/.tmux.conf ~/.tmux.conf
+sudo cp ./linux-configuration/.tmux.conf ~/.tmux.conf
 
 # remove the configuration directory
-rm -rf ./linux-configuration
+sudo rm -rf ./linux-configuration
 
 
