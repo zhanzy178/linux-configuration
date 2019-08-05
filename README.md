@@ -7,7 +7,7 @@
 - The following command can auto config your linux server (Now my script works well under Ubuntu 16.04.4):
 ```bash
 wget https://raw.githubusercontent.com/zhanzy178/linux-configuration/master/auto_config.sh \
-    && sudo bash auto_config.sh && rm -rf auto_config.sh
+    && bash auto_config.sh && rm -rf auto_config.sh
 ```
 
 ## Support
