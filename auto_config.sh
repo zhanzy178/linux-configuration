@@ -133,7 +133,8 @@ sudo cp ./linux-configuration/.tmux.conf ~/.tmux.conf && \
 \
 \
 echo `# remove the configuration directory` && \
-sudo rm -rf ./linux-configuration
+sudo rm -rf ./linux-configuration && \
+sudo chown -R $USER $HOME
 
 
 
