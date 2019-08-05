@@ -47,12 +47,6 @@ echo `# redis-server` && \
 sudo apt-get install -y redis-server && \
 \
 \
-echo `# mysql` && \
-echo `# https://help.ubuntu.com/lts/serverguide/mysql.html` && \
-sudo apt-get install -y mysql-server && \
-sudo apt-get install -y mysql-client && \
-\
-\
 echo `# go` && \
 echo `# wget https://dl.google.com/go/go1.11.1.linux-amd64.tar.gz` && \
 wget https://mirrors.ustc.edu.cn/golang/go1.10.1.linux-amd64.tar.gz && \
@@ -142,3 +136,10 @@ echo `# remove the configuration directory` && \
 sudo rm -rf ./linux-configuration
 
 
+
+# \
+# \
+# echo `# mysql` && \
+# echo `# https://help.ubuntu.com/lts/serverguide/mysql.html` && \
+# sudo apt-get install -y mysql-server && \
+# sudo apt-get install -y mysql-client && \
