@@ -1,9 +1,9 @@
 # Install necessary softwares and make linux server(Ubuntu or Debian) profile.
 
-echo `# get auth` && \
-sudo chown -R $USER $HOME && \
-\
-\
+# echo `# get auth` && \
+# sudo chown -R $USER $HOME && \
+# \
+# \
 export LC_ALL=C && \
 \
 \
@@ -133,8 +133,7 @@ sudo cp ./linux-configuration/.tmux.conf ~/.tmux.conf && \
 \
 \
 echo `# remove the configuration directory` && \
-sudo rm -rf ./linux-configuration && \
-sudo chown -R $USER $HOME
+sudo rm -rf ./linux-configuration
 
 
 
