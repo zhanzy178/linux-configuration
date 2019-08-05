@@ -4,6 +4,9 @@ echo `# get auth` && \
 sudo chown -R $USER $HOME && \
 \
 \
+export LC_ALL=C && \
+\
+\
 echo `# update apt-get` && \
 sudo apt-get update && \
 \
@@ -136,6 +139,6 @@ sudo cp ./linux-configuration/.tmux.conf ~/.tmux.conf && \
 \
 \
 echo `# remove the configuration directory` && \
-sudo rm -rf ./linux-configuration && \
+sudo rm -rf ./linux-configuration
 
 
