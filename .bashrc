@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# locale
+export LC_ALL=C
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
