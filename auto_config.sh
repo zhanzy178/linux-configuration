@@ -198,9 +198,10 @@ function clear_all {
     cd $HOME
     rm -rf go1.10.1.linux-amd64.tar.gz
     rm -rf linux-configuration
-    rm -rf .error.log
+#     rm -rf .error.log
     rm -rf proxychains-ng
     rm -rf vim
+    rm -rf auto_config.sh
 }
 
 
@@ -267,7 +268,7 @@ vim_install 2>>.error.log
 # report error
 echo ""
 echo "------------*-error-log-*--------------"
-cat .error.log && .error.log
+cat .error.log
 
 echo "------------*-clear-*--------------"
 clear_all
