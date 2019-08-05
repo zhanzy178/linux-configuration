@@ -267,7 +267,7 @@ vim_install 2>>.error.log
 
 # report error
 echo ""
-echo "------------*-error-log-*--------------"
+echo "------------*-.error.log-*--------------"
 cat .error.log
 
 echo "------------*-clear-*--------------"
