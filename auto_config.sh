@@ -7,7 +7,19 @@ sudo chown -R $USER $HOME
 sudo apt-get update
 
 # base
-sudo apt-get install apt-transport-https build-essential openssh-server cmake python-pip python-setuptools m2crypto python3-dev python-dev curl libncurses5-dev libncursesw5-dev -y
+sudo apt-get install apt-transport-https -y
+sudo apt-get install build-essential -y
+sudo apt-get install openssh-server -y
+sudo apt-get install cmake -y
+sudo apt-get install python-pip -y
+sudo apt-get install python-setuptools -y
+sudo apt-get install m2crypto -y
+sudo apt-get install python3-dev -y
+sudo apt-get install python-dev -y
+sudo apt-get install curl -y
+sudo apt-get install libncursesw5-dev -y
+sudo apt-get install libncurses5-dev -y
+
 
 # git
 sudo apt-get install git -y
@@ -63,22 +75,22 @@ sudo apt-get remove vim-common -y
 sudo apt-get remove vim -y
 git clone https://github.com/vim/vim.git
 cd vim
-./configure --with-features=huge \
-            --enable-multibyte \
-            --enable-rubyinterp=yes \
-            --enable-pythoninterp=yes \
-            --with-python-config-dir=/usr/lib/python2.7/config \ # pay attention here check directory correct
-            --enable-python3interp=yes \
-            --with-python3-config-dir=/usr/lib/python3.5/config \
-            --enable-perlinterp=yes \
-            --enable-luainterp=yes \
-            --enable-gui=gtk2 \
-            --enable-cscope \
+sudo ./configure --with-features=huge \\
+            --enable-multibyte \\
+            --enable-rubyinterp=yes \\
+            --enable-pythoninterp=yes \\
+            --with-python-config-dir=/usr/lib/python2.7/config \\ # pay attention here check directory correct
+            --enable-python3interp=yes \\
+            --with-python3-config-dir=/usr/lib/python3.5/config \\
+            --enable-perlinterp=yes \\
+            --enable-luainterp=yes \\
+            --enable-gui=gtk2 \\
+            --enable-cscope \\
             --prefix=/usr/local
 sudo make
 sudo make install
-sudo rm -rf vim
 # Install plug
+cd $HOME
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sudo cp ./linux-configuration/.vimrc ~/.vimrc
@@ -89,7 +101,7 @@ git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe/
 git submodule update --init --recursive
 python3 install.py --clang-completer --go-completer
-cd $HOME
+sudo rm -rf vim
 sudo ln -s /usr/local/bin/vim /bin/vi
 
 # proxychains-ng
