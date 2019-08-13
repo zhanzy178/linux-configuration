@@ -2,8 +2,7 @@
 
 # echo `# get auth` && \
 # sudo chown -R $USER $HOME && \
-# \
-# \
+# pip install --upgrade torch==1.0 torchvision -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 function lang {
     echo ""
