@@ -1,7 +1,16 @@
 # Install necessary softwares and make linux server(Ubuntu or Debian) profile.
 
-# echo `# get auth` && \
-# sudo chown -R $USER $HOME && \
+# get auth
+# sudo chown -R $USER $HOME
+#
+# anaconda
+# wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
+#
+# driver cuda
+# wget http://us.download.nvidia.com/XFree86/Linux-x86_64/430.40/NVIDIA-Linux-x86_64-430.40.run
+# wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda_10.0.130_410.48_linux
+#
+# torch
 # pip install --upgrade torch==1.0 torchvision -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 function lang {
