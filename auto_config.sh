@@ -180,6 +180,12 @@ function ss_install {
     cd $HOME && \
     pip install shadowsocks && \
     sudo mv ./linux-configuration/shadowsocks /etc/shadowsocks
+    
+#     wget https://onlyless.github.io/ssr
+#     sudo mv ssr /usr/local/bin
+#     sudo chmod 766 /usr/local/bin/ssr
+#     ssr install
+#     ssr config
 }
 
 
