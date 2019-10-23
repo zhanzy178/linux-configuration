@@ -63,6 +63,9 @@ function bashrc_cfg {
     cd $HOME && \
     cat ./linux-configuration/.bashrc>> ~/.bashrc && \
     source ~/.bashrc
+    echo "if test -f .bashrc ; then 
+    source .bashrc
+fi" >> .bash_profile
 }
 
 function nodejs_install {
